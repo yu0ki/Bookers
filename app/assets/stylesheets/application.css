@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+ 
+ /*homes_contollerのトップページのCSS*/
+ /*top.html.erb*/
+ 
+.top-page-container{
+    margin: 33px;
+}
+
+.top-heading{
+    font-size: 26px;
+}
+
+.top-message{
+    padding-left: 30px;    
+}
+
+

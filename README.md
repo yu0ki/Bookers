@@ -1,24 +1,19 @@
-# README
+# Bookersについて
+ウェブアプリケーション「Bookers」は、本のタイトルとその感想を投稿できるものである。感想は、新規作成、編集、削除を行うことができる。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 外部仕様
 
-Things you may want to cover:
 
-* Ruby version
+# 内部仕様
+Ruby on Railsを使用して、MVCモデルのアプリケーションになっている。
 
-* System dependencies
+## M(モデル)
+本のタイトルと感想を管理するモデルBookを作成した。カラムはtitle（本のタイトル）、body（感想）の2項目である。
 
-* Configuration
+## C（コントローラー）
+トップページを管理するhomes_controllerと、投稿一覧と投稿フォームを管理するbooks_controllerを作成した。
 
-* Database creation
+### homes_controller
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### books_controller
