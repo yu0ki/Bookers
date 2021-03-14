@@ -12,7 +12,7 @@ class BooksController < ApplicationController
     def create
         book = Book.new(book_params)
         if book.save
-           flash[:notice] = 'Your Impression was succesfully created!'
+           flash[:notice] = 'Your Impression was successfully created!'
            redirect_to book_path(book)
         else
             @books = Book.all
@@ -33,7 +33,7 @@ class BooksController < ApplicationController
     def update
        book = Book.find(params[:id])
        if book.update(book_params)
-           flash[:notice] = 'Your Impression was succesfully updated!'
+           flash[:notice] = 'Your Impression was successfully updated!'
            redirect_to book_path(book)
         else
             @book = book
@@ -44,7 +44,7 @@ class BooksController < ApplicationController
     def destroy
        book = Book.find(params[:id])
        if book.destroy
-           flash[:notice] = 'Your Impression was succesfully deleted!'
+           flash[:notice] = 'Your Impression was successfully deleted!'
            redirect_to books_path(book)
         else
             render('books')
