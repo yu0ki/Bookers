@@ -1,11 +1,18 @@
+<!--Bookモデルで発生した任意のエラーについて、
+以下の要素を表示する-->
+
 <% if @book.errors.any? %>
+    <!--エラーメッセージ全体を囲むbox-->
     <div class = "alert font-size-13">
+        
+        <!--エラー文1行目-->
         <div class = "error-heading">
             <p>
                 <%= @book.errors.full_messages.length %> error prohibited this book from being saved:
             </p>
         </div>
         
+        <!--エラー文2行目以降-->
         <div class = "error-body">
             <ur>
                 <% @book.errors.full_messages.each do |message| %>
